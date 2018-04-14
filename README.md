@@ -6,7 +6,8 @@ reinforcement learning algorithms across Atari games.
 I decided to put this together after noticing two things:
 
 - Many Atari RL papers are selective in what algorithms they compare to.
-- Top human scores are orders of magnitude better than those reported in Dueling DQN paper.
+- Top human scores are orders of magnitude better than the benchmarks
+reported in Dueling DQN paper.
 
 | Game | Top Human Score | Top Machine Score | Best | Best Machine | Learning Type |
 | --- | --- | --- | --- | --- | --- |
@@ -52,7 +53,7 @@ I decided to put this together after noticing two things:
 | Seaquest | 999999 | 50254 | Human | Dueling DDQN | Q-gradient |
 | Skiing | -3272 | -6522 | Human | Vanilla GA | Genetic Policy |
 | Space Invaders | 621535 | 23864 | Human | A3C | Policy-gradient |
-| Star Gunner | 69400 | 164766 | Human | A3C | Policy-gradient |
+| Star Gunner | 69400 | 164766 | Machine | A3C | Policy-gradient |
 | Time Pilot | 112100 | 27202 | Human | A3C | Policy-gradient |
 | Tutankham | 5384 | 280 | Human | ACER | Policy-gradient |
 | Venture | 913200 | 1107 | Human | Distribution DQN | Q-gradient |
@@ -64,9 +65,10 @@ I decided to put this together after noticing two things:
 
 ## Win Counts
 
-It will be surprising to some that humans win by a long way here. The Dueling DDQN
-papers report superhuman performance, but compared to casual baseline. An expert comparison,
-like in chess and go, is more appropriate, since these algorithms play 1000s of games each.
+It will be surprising to some that humans win by a long way here. Machines win on two and
+draw on one. The Dueling DDQN papers report superhuman performance, but this is compared
+to casual baseline. An expert comparison, like in chess and go, is more appropriate, since
+these algorithms play 1000s of games each.
 
 Excluding humans, per-algorithm win count are as follows (two way ties friendly, three or
 more unfriendly):
