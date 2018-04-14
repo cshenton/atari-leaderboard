@@ -104,7 +104,7 @@ results are only available with human op starts, and A2C covers the general meth
 
 ## References
 
-- [Human](www.twingalaxies.com)
+- [Human](https://www.twingalaxies.com)
 - [A2C](https://arxiv.org/pdf/1707.06347.pdf)
 - [ACER](https://arxiv.org/pdf/1707.06347.pdf)
 - [Distribution DQN](https://arxiv.org/pdf/1710.02298.pdf)
