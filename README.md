@@ -66,6 +66,7 @@ Human's win by a long way here, so let's exclude them and count SOA games by
 algorithm. Two way ties are friendly, any more way ties are not counted at all.
 
 | Algorithm | Type | Wins |
+| --- | --- | --- |
 | Rainbow | Q-gradient | 25 |
 | Dueling DDQN | Q-gradient | 8 |
 | Distribution DQN | Q-gradient | 7 |
