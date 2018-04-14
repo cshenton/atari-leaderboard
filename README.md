@@ -76,12 +76,11 @@ more unfriendly):
 | Rainbow | Q-gradient | 18 |
 | A3C (FF and LSTM) | Policy-gradient | 11 |
 | Dueling DDQN | Q-gradient | 6 |
-| Distribution DQN | Q-gradient | 3 |
 | HyperNEAT | Genetic Policy | 4 |
+| Distribution DQN | Q-gradient | 3 |
 | Prioritized DDQN | Q-gradient | 3 |
 | ACER | Policy-gradient | 2 |
 | PPO | Policy-gradient | 1 |
-
 | Vanilla GA | Genetic Policy | 1 |
 | Noisy DQN | Q-gradient | 0 |
 | Vanilla ES | Genetic Policy | 0 |
