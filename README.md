@@ -18,10 +18,10 @@ art for each game, making true comparisons difficult.
 | Battle Zone | 1545000 | 62010 | Human | Rainbow | Q-gradient |
 | Beam Rider | 999999 | 22430 | Human | Prioritized DDQN | Q-gradient |
 | Berzerk | 1057940 | 2545 | Human | Rainbow | Q-gradient |
-| Bowling | 300 | 74 | Human | Distribution DQN | Q-gradient |
+| Bowling | 300 | 135 | Human | HyperNEAT | Genetic Policy |
 | Boxing | 102 | 99 | Human | Rainbow, ACER | Q,Policy-gradient |
 | Breakout | 864 | 612 | Human | Distribution DQN | Q-gradient |
-| Centipede | 1301709 | 9015 | Human | Distribution DQN | Q-gradient |
+| Centipede | 1301709 | 25275 | Human | HyperNEAT | Genetic Policy |
 | Chopper Command | 999999 | 16654 | Human | Rainbow | Q-gradient |
 | Crazy Climber | 219900 | 183135 | Human | Prioritized DDQN | Q-gradient |
 | Defender | 5443150 | 55105 | Human | Rainbow | Q-gradient |
@@ -33,9 +33,9 @@ art for each game, making true comparisons difficult.
 | Gopher | 829440 | 70354 | Human | Rainbow | Q-gradient |
 | Gravitar | 999950 | 1419 | Human | Rainbow | Q-gradient |
 | HERO | 1000000 | 55887 | Human | Rainbow | Q-gradient |
-| Ice Hockey | 36 | 1 | Human | Distribution DQN | Q-gradient |
+| Ice Hockey | 36 | 10 | Human | HyperNEAT | Genetic Policy |
 | Kangaroo | 1424600 | 14854 | Human | Dueling DDQN | Q-gradient |
-| Krull | 1245900 | 11451 | Human | Dueling DDQN | Q-gradient |
+| Krull | 1245900 | 12601 | Human | HyperNEAT | Genetic Policy |
 | Kung Fu Master | 1000000 | 52181 | Human | Rainbow | Q-gradient |
 | Montezuma Revenge | 1219200 | 384 | Human | Rainbow | Q-gradient |
 | Ms Pacman | 2654680 | 6283 | Human | Dueling DDQN | Q-gradient |
@@ -68,13 +68,15 @@ algorithm. Two way ties are friendly, any more way ties are not counted at all.
 | Algorithm | Type | Wins |
 | --- | --- | --- |
 | Rainbow | Q-gradient | 25 |
-| Dueling DDQN | Q-gradient | 8 |
-| Distribution DQN | Q-gradient | 7 |
+| Dueling DDQN | Q-gradient | 7 |
+| Distribution DQN | Q-gradient | 4 |
+| HyperNEAT | Genetic Policy | 4 |
 | Prioritized DDQN | Q-gradient | 3 |
 | ACER | Policy-gradient | 2 |
 | PPO | Policy-gradient | 1 |
 | Noisy DQN | Q-gradient | 1 |
 | Vanilla GA | Genetic Policy | 1 |
+| Vanilla ES | Genetic Policy | 0 |
 
 
 ## Methodology
@@ -102,6 +104,7 @@ results are only available with human op starts, and A2C covers the general meth
 - [ACER](https://arxiv.org/pdf/1707.06347.pdf)
 - [Distribution DQN](https://arxiv.org/pdf/1710.02298.pdf)
 - [Dueling DDQN](https://arxiv.org/pdf/1710.02298.pdf)
+- [HyperNeat](https://arxiv.org/pdf/1703.03864.pdf), also checked against original paper
 - [Rainbow](https://arxiv.org/pdf/1710.02298.pdf)
 - [Prioritized DDQN](https://arxiv.org/pdf/1710.02298.pdf)
 - [Proximal Policy Optimization](https://arxiv.org/pdf/1707.06347.pdf)
