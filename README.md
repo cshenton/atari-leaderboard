@@ -2,7 +2,8 @@
 
 I decided to put this together after noticing two things:
 
-- HyperNEAT, a genetic algorithm predating DQN, still maintains state-of-the-art scores on several games.
+- Most RL papers only report a handful of comparison algorithms, not state of the
+art for each game, making true comparisons difficult.
 - Top human scores are orders of magnitude better than those reported in Dueling DQN paper.
 
 | Game | Top Human Score | Top Machine Score | Best | Best Machine | Learning Type |
@@ -13,7 +14,7 @@ I decided to put this together after noticing two things:
 | Asterix | 1000000 | 428200 | Human | Rainbow | Q-gradient |
 | Asteroids | 10004100 | 4814 | Human | Noisy DQN | Q-gradient |
 | Atlantis | 10604840 | 2311815 | Human | PPO | Policy-gradient |
-| Bank Heist | 82058 | 1611 | Human | Dueling DQN | Q-gradient |
+| Bank Heist | 82058 | 1611 | Human | Dueling DDQN | Q-gradient |
 | Battle Zone | 1545000 | 62010 | Human | Rainbow | Q-gradient |
 | Beam Rider | 999999 | 22430 | Human | Prioritized DDQN | Q-gradient |
 | Berzerk | 1057940 | 2545 | Human | Rainbow | Q-gradient |
@@ -47,7 +48,7 @@ I decided to put this together after noticing two things:
 | Road Runner | 2038100 | 69524 | Human | Dueling DDQN | Q-gradient |
 | Robotank | 76 | 65 | Human | Dueling DDQN | Q-gradient |
 | Seaquest | 999999 | 50254 | Human | Dueling DDQN | Q-gradient |
-| Skiing | -3272 | -8857 | Human | Dueling DDQN | Q-gradient |
+| Skiing | -3272 | -6522 | Human | Vanilla GA | Genetic Policy |
 | Space Invaders | 621535 | 18789 | Human | Rainbow | Q-gradient |
 | Star Gunner | 69400 | 108528 | Human | Rainbow | Q-gradient |
 | Time Pilot | 112100 | 12926 | Human | Rainbow | Q-gradient |
@@ -59,21 +60,38 @@ I decided to put this together after noticing two things:
 | Zaxxon | 772400 | 22209 | Human | Rainbow | Q-gradient |
 
 
+## Win Count
+
+Human's win by a long way here, so let's exclude them and count SOA games by
+algorithm. Two way ties are friendly, any more way ties are not counted at all.
+
+| Algorithm | Type | Wins |
+| Rainbow | Q-gradient | 25 |
+| Dueling DDQN | Q-gradient | 8 |
+| Distribution DQN | Q-gradient | 7 |
+| Prioritized DDQN | Q-gradient | 3 |
+| ACER | Policy-gradient | 2 |
+| PPO | Policy-gradient | 1 |
+| Noisy DQN | Q-gradient | 1 |
+| Vanilla GA | Genetic Policy | 1 |
+
+
 ## Methodology
 
 There are various numbers of trials used in reference papers, including different
 amounts of no-op starts, etc. I take a generous approach here, the best score is
 simply the best score averaged over at least a few runs from, in decreasing order of
-preference, no-op starts, random-op starts, human-op starts.
+preference, no-op starts, random-op starts.
 
 This is an imperfect method, but it in effect takes the stance that improvements to
-start of the art should be substantial enough that the error introduced by this method
-should be small in comparison.
+start of the art should be substantial enough that the error introduced by this
+method should be small in comparison.
 
 All scores are taken from the papers referenced below, along with a count of how many
 games that method is SOA in.
 
-Games for which there exists no human WR are excluded.
+Games for which there exists no human WR are excluded. I exclude A3C since those
+results are only available with human op starts, and A2C covers the general method.
 
 
 ## References
@@ -84,5 +102,7 @@ Games for which there exists no human WR are excluded.
 - [Distribution DQN](https://arxiv.org/pdf/1710.02298.pdf)
 - [Dueling DDQN](https://arxiv.org/pdf/1710.02298.pdf)
 - [Rainbow](https://arxiv.org/pdf/1710.02298.pdf)
-- [Prioritized DQN](https://arxiv.org/pdf/1710.02298.pdf)
+- [Prioritized DDQN](https://arxiv.org/pdf/1710.02298.pdf)
 - [Proximal Policy Optimization](https://arxiv.org/pdf/1707.06347.pdf)
+- [Vanilla Evolution Strategies](https://arxiv.org/pdf/1703.03864.pdf)
+- [Vanilla Genetic Algorithm](https://arxiv.org/pdf/1712.06567.pdf)
