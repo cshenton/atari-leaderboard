@@ -11,16 +11,16 @@ reported in Dueling DQN paper.
 
 | Game | Top Human Score | Top Machine Score | Best | Best Machine | Learning Type |
 | --- | --- | --- | --- | --- | --- |
-| Alien | 255265 | 9491 | Human | Rainbow | Q-gradient |
-| Amidar | 104159 | 5131 | Human | Rainbow | Q-gradient |
-| Assault | 8647 | 14497 | Machine | A3C | Policy-gradient |
-| Asterix | 1000000 | 428200 | Human | Rainbow | Q-gradient |
-| Asteroids | 10004100 | 5093 | Human | A3C | Policy-gradient |
-| Atlantis | 10604840 | 2311815 | Human | PPO | Policy-gradient |
-| Bank Heist | 82058 | 1611 | Human | Dueling DDQN | Q-gradient |
-| Battle Zone | 1545000 | 62010 | Human | Rainbow | Q-gradient |
-| Beam Rider | 999999 | 26172 | Human | Prioritized DDQN | Q-gradient |
-| Berzerk | 1057940 | 2545 | Human | Rainbow | Q-gradient |
+| Alien | [251916](https://www.twingalaxies.com/game/alien/atari-2600-vcs) | 9491 | Human | Rainbow | Q-gradient |
+| Amidar | [104159](https://www.twingalaxies.com/game/amidar/atari-2600-vcs) | 5131 | Human | Rainbow | Q-gradient |
+| Assault | [8647](https://www.twingalaxies.com/game/assault/atari-2600-vcs) | 14497 | Machine | A3C | Policy-gradient |
+| Asterix | [1000000](https://www.twingalaxies.com/game/asterix/atari-2600-vcs) | 428200 | Human | Rainbow | Q-gradient |
+| Asteroids | [10004100](https://www.twingalaxies.com/game/asteroids/atari-2600-vcs) | 5093 | Human | A3C | Policy-gradient |
+| Atlantis | [10604840](https://www.twingalaxies.com/game/atlantis/atari-2600-vcs) | 2311815 | Human | PPO | Policy-gradient |
+| Bank Heist | [82058](https://www.twingalaxies.com/game/bank-heist/atari-2600-vcs) | 1611 | Human | Dueling DDQN | Q-gradient |
+| Battle Zone | [1000000](https://www.twingalaxies.com/game/battle-zone-set-1/mame) | 62010 | Human | Rainbow | Q-gradient |
+| Beam Rider | [999999](https://www.twingalaxies.com/game/beamrider/atari-2600-vcs) | 26172 | Human | Prioritized DDQN | Q-gradient |
+| Berzerk | [1057940](https://www.twingalaxies.com/game/berzerk/atari-2600-vcs) | 2545 | Human | Rainbow | Q-gradient |
 | Bowling | 300 | 135 | Human | HyperNEAT | Genetic Policy |
 | Boxing | 102 | 99 | Human | Rainbow, ACER | Q,Policy-gradient |
 | Breakout | 864 | 766 | Human | A3C | Policy-gradient |
@@ -100,6 +100,12 @@ higher scores anyway), and treating all sample sizes equally.
 
 Games for which there exists no human WR are excluded. I exclude A3C since those
 results are only available with human op starts, and A2C covers the general method.
+
+
+## Todo
+
+- More specific information on which region's releases the Atari Learning Environment uses.
+Update human scores accordingly.
 
 
 ## References
