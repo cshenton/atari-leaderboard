@@ -48,7 +48,7 @@ in the [Arcade Learning Environment (ALE)](https://github.com/mgbellemare/Arcade
 | Robot Tank | [68](https://www.twingalaxies.com/game/robot-tank/atari-2600-vcs) | 65 | Human | Dueling DDQN | Q-gradient | |
 | Seaquest | [294940](https://www.twingalaxies.com/game/seaquest/atari-2600-vcs) | 50254 | Human | Dueling DDQN | Q-gradient | |
 | Skiing | [-3272](https://www.twingalaxies.com/game/skiing/atari-2600-vcs) | -6522 | Human | Vanilla GA | Genetic Policy | |
-| Space Invaders | [43710](https://www.twingalaxies.com/game/space-invaders/atari-2600-vcs) `1B` | 23864 | Human | A3C | Policy-gradient | |
+| Space Invaders | [43710](https://www.twingalaxies.com/game/space-invaders/atari-2600-vcs) | 23864 | Human | A3C | Policy-gradient | `1B` |
 | Star Gunner | [77400](https://www.twingalaxies.com/game/stargunner/atari-2600-vcs) | 164766 | Machine | A3C | Policy-gradient | `N` |
 | Time Pilot | [34400](https://www.twingalaxies.com/game/time-pilot/atari-2600-vcs) | 27202 | Human | A3C | Policy-gradient | |
 | Tutankham | [2026](https://www.twingalaxies.com/game/tutankham/atari-2600-vcs) | 280 | Human | ACER | Policy-gradient | |
