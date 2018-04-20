@@ -51,7 +51,7 @@ in the [Arcade Learning Environment (ALE)](https://github.com/mgbellemare/Arcade
 | Time Pilot | [34400](https://www.twingalaxies.com/game/time-pilot/atari-2600-vcs) | 27202 | Human | A3C | Policy-gradient | |
 | Tutankham | [2026](https://www.twingalaxies.com/game/tutankham/atari-2600-vcs) | 280 | Human | ACER | Policy-gradient | |
 | Venture | [38900](https://www.twingalaxies.com/game/venture/atari-2600-vcs) | 1107 | Human | Distribution DQN | Q-gradient | `N` |
-| Video Pinball | [3523988](https://www.twingalaxies.com/game/video-pinball/atari-2600-vcs) `1B` | 533936 | Human | Rainbow | Q-gradient | |
+| Video Pinball | [3523988](https://www.twingalaxies.com/game/video-pinball/atari-2600-vcs) | 533936 | Human | Rainbow | Q-gradient | `1B` |
 | Wizard of Wor | [129500](https://www.twingalaxies.com/game/wizard-of-wor/atari-2600-vcs) | 18082 | Human | A3C | Policy-gradient | |
 | Yars Revenge | [2011099](https://www.twingalaxies.com/game/yars-revenge/atari-2600-vcs) | 102557 | Human | Rainbow | Q-gradient | `++` |
 | Zaxxon | [83700](https://www.twingalaxies.com/game/zaxxon/atari-2600-vcs) | 24622 | Human | A3C | Q-gradient | |
@@ -64,27 +64,25 @@ in the [Arcade Learning Environment (ALE)](https://github.com/mgbellemare/Arcade
 - `++` Game 2, Difficulty A
 
 
-## Why?
+## What the point of this?
 
-I decided to put this together after noticing two things:
+I decided to put this together after noticing two trends in reinforcement learning papers:
 
-- Many Atari RL papers are selective in what algorithms they compare to.
-- When they compare to human performance, most RL papers compare to amateur human performance.
-Considering RL algorithms see 100s of millions of frames, this isn't an apples to apples comparison.
+- Not comparing to state of art.
+- Comparing an algorithm with 1000s of hours playtime to a human that played for a few hours.
 
-This is here as a personal reference, as well as to clear the waters a bit about where the state of RL
-is actually at (at least on this domain).
+Respectively, these make it hard to see the relative progress of the field from paper to paper,
+and the absolute progress compared to human level game playing.
+
+Though RL papers routinely quote >100% normalized human performance, the reality is that machine
+learning algorithms just barely beat humans on only 5 out of 49 games here, and humans have a
+substantial lead in the rest. We have a long way to go.
 
 
-## Win Counts
+## Performance Among Machines
 
-It will be surprising to some that humans win by a long way here. Machines win on two and
-draw on one. The Dueling DDQN papers report superhuman performance, but this is compared
-to casual baseline. An expert comparison, like in chess and go, is more appropriate, since
-these algorithms play 1000s of games each.
-
-Excluding humans, per-algorithm win count are as follows (two way ties friendly, three or
-more unfriendly):
+When we exclude human scores, per-algorithm win count are as follows (two way ties friendly, three
+or more unfriendly):
 
 | Algorithm | Type | Wins |
 | --- | --- | --- |
@@ -103,9 +101,13 @@ more unfriendly):
 
 ## Methodology
 
+#### Human Scores
+
 Since the ALE uses the stella Atari emulator, the *Top Human Score* is the top human score on an
 emulator. Atari (and other game) releases tend to vary across region, so this is the only way to
 ensure that both human and machine have, for example, equal access to game breaking bugs.
+
+#### Machine Scores
 
 Reference papers vary in:
 
@@ -114,15 +116,6 @@ Reference papers vary in:
 
 I take the approach here of favouring no-op starts over random ones (they usually have
 higher scores anyway), and treating all sample sizes equally.
-
-Games for which there exists no human WR are excluded. I exclude A3C since those
-results are only available with human op starts, and A2C covers the general method.
-
-
-## Todo
-
-- More specific information on which region's releases the Atari Learning Environment uses.
-Update human scores accordingly.
 
 
 ## References
