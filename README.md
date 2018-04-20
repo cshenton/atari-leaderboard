@@ -1,5 +1,7 @@
 # Atari Reinforcement Learning Leaderboard
 
+> Any scores out of date? Make a [Pull Request](https://github.com/cshenton/atari-leaderboard/compare).
+
 This is a leaderboard comparing world record human performance to start of the art machine performance
 in the [Arcade Learning Environment (ALE)](https://github.com/mgbellemare/Arcade-Learning-Environment).
 
@@ -35,7 +37,7 @@ in the [Arcade Learning Environment (ALE)](https://github.com/mgbellemare/Arcade
 | Krull | [104100](https://www.twingalaxies.com/game/krull/atari-2600-vcs/) | 12601 | Human | HyperNEAT | Genetic Policy | `N` |
 | Kung Fu Master | [79360](https://www.twingalaxies.com/game/kung-fu-master/atari-2600-vcs/) | 52181 | Human | Rainbow | Q-gradient | |
 | Montezumas Revenge | [400000](https://www.twingalaxies.com/game/montezumas-revenge/atari-2600-vcs/) | 384 | Human | Rainbow | Q-gradient | |
-| Ms Pacman | 2654680 | 6283 | Human | Dueling DDQN | Q-gradient | |
+| Ms Pacman | [211480](http://www.jvgs.net/2600/top50.htm) | 6283 | Human | Dueling DDQN | Q-gradient | |
 | Name This Game | [21210](https://www.twingalaxies.com/game/name-this-game-octopus/atari-2600-vcs) | 13439 | Human | Prioritized DDQN | Q-gradient | |
 | Phoenix | [251180](https://www.twingalaxies.com/game/phoenix/atari-2600-vcs) | 108528 | Human | Rainbow | Q-gradient | |
 | Pitfall | [114000](https://www.twingalaxies.com/game/pitfall/atari-2600-vcs) | 0 | Human | Several | Q-gradient | |
@@ -108,6 +110,12 @@ emulator. Atari (and other game) releases tend to vary across region, so this is
 ensure that both human and machine have, for example, equal access to game breaking bugs.
 
 #### Machine Scores
+
+A valid machine score is one achieved by a reinforcement learning algorithm trained directly on
+pixels and raw rewards, such as one that can be trained against common ALE wrappers / forks, like
+[gym](https://github.com/openai/gym) or [xitari](https://github.com/deepmind/xitari). This means
+that algorithms like [this one](https://arxiv.org/abs/1706.04208) which use hand-engineered intermediate
+rewards do not qualify.
 
 Reference papers vary in:
 
