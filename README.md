@@ -135,6 +135,7 @@ higher scores anyway), and treating all sample sizes equally.
 
 - [Human](https://www.twingalaxies.com)
 - [A2C](https://arxiv.org/pdf/1707.06347.pdf)
+- [A3C](https://arxiv.org/pdf/1602.01783.pdf)
 - [ACER](https://arxiv.org/pdf/1707.06347.pdf)
 - [Distribution DQN](https://arxiv.org/pdf/1710.02298.pdf)
 - [Dueling DDQN](https://arxiv.org/pdf/1710.02298.pdf)
