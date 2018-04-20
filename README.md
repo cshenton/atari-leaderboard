@@ -1,31 +1,25 @@
 # Atari Reinforcement Learning Leaderboard
 
-This is a leaderboard comparing world record human performance to state of the art
-reinforcement learning algorithms across Atari games.
-
-I decided to put this together after noticing two things:
-
-- Many Atari RL papers are selective in what algorithms they compare to.
-- Top human scores are orders of magnitude better than the benchmarks
-reported in Dueling DQN paper.
+This is a leaderboard comparing world record human performance to start of the art machine performance
+in the [Arcade Learning Environment (ALE)](https://github.com/mgbellemare/Arcade-Learning-Environment).
 
 | Game | Top Human Score | Top Machine Score | Best | Best Machine | Learning Type |
 | --- | --- | --- | --- | --- | --- |
-| Alien | [251916](https://www.twingalaxies.com/game/alien/atari-2600-vcs) | 9491 | Human | Rainbow | Q-gradient |
-| Amidar | [104159](https://www.twingalaxies.com/game/amidar/atari-2600-vcs) | 5131 | Human | Rainbow | Q-gradient |
+| Alien | [103583](https://www.twingalaxies.com/game/alien/atari-2600-vcs) | 9491 | Human | Rainbow | Q-gradient |
+| Amidar | [71529](https://www.twingalaxies.com/game/amidar/atari-2600-vcs) | 5131 | Human | Rainbow | Q-gradient |
 | Assault | [8647](https://www.twingalaxies.com/game/assault/atari-2600-vcs) | 14497 | Machine | A3C | Policy-gradient |
 | Asterix | [1000000](https://www.twingalaxies.com/game/asterix/atari-2600-vcs) | 428200 | Human | Rainbow | Q-gradient |
-| Asteroids | [10004100](https://www.twingalaxies.com/game/asteroids/atari-2600-vcs) | 5093 | Human | A3C | Policy-gradient |
+| Asteroids | [57340](https://www.twingalaxies.com/game/asteroids/atari-2600-vcs)* | 5093 | Human | A3C | Policy-gradient |
 | Atlantis | [10604840](https://www.twingalaxies.com/game/atlantis/atari-2600-vcs) | 2311815 | Human | PPO | Policy-gradient |
-| Bank Heist | [82058](https://www.twingalaxies.com/game/bank-heist/atari-2600-vcs) | 1611 | Human | Dueling DDQN | Q-gradient |
-| Battle Zone | [1000000](https://www.twingalaxies.com/game/battle-zone-set-1/mame) | 62010 | Human | Rainbow | Q-gradient |
-| Beam Rider | [999999](https://www.twingalaxies.com/game/beamrider/atari-2600-vcs) | 26172 | Human | Prioritized DDQN | Q-gradient |
+| Bank Heist | [45899](https://www.twingalaxies.com/game/bank-heist/atari-2600-vcs) | 1611 | Human | Dueling DDQN | Q-gradient |
+| Battlezone | [98000](https://www.twingalaxies.com/game/battle-zone-set-1/mame) | 62010 | Human | Rainbow | Q-gradient |
+| Beamrider | [52866](https://www.twingalaxies.com/game/beamrider/atari-2600-vcs)** | 26172 | Human | Prioritized DDQN | Q-gradient |
 | Berzerk | [1057940](https://www.twingalaxies.com/game/berzerk/atari-2600-vcs) | 2545 | Human | Rainbow | Q-gradient |
 | Bowling | 300 | 135 | Human | HyperNEAT | Genetic Policy |
-| Boxing | 102 | 99 | Human | Rainbow, ACER | Q,Policy-gradient |
-| Breakout | 864 | 766 | Human | A3C | Policy-gradient |
-| Centipede | 1301709 | 25275 | Human | HyperNEAT | Genetic Policy |
-| Chopper Command | 999999 | 16654 | Human | Rainbow | Q-gradient |
+| Boxing | [99](https://www.twingalaxies.com/game/boxing/atari-2600-vcs/) | 99 | Draw | Rainbow, ACER | Q,Policy-gradient |
+| Breakout | [864](https://www.twingalaxies.com/game/breakout/atari-2600-vcs/) | 766 | Human | A3C | Policy-gradient |
+| Centipede | [453916](https://www.twingalaxies.com/game/centipede/atari-2600-vcs/) | 25275 | Human | HyperNEAT | Genetic Policy |
+| Chopper Command | [999999](https://www.twingalaxies.com/game/chopper-command/atari-2600-vcs/) | 16654 | Human | Rainbow | Q-gradient |
 | Crazy Climber | 219900 | 183135 | Human | Prioritized DDQN | Q-gradient |
 | Defender | 5443150 | 233021 | Human | A3C | Policy-gradient |
 | Demon Attack | 1556345 | 115201 | Human | A3C | Policy-gradient |
@@ -62,6 +56,20 @@ reported in Dueling DQN paper.
 | Yars Revenge | 15000105 | 102557 | Human | Rainbow | Q-gradient |
 | Zaxxon | 772400 | 24622 | Human | A3C | Q-gradient |
 
+`* Game 6, Difficulty B`
+`* Game 1, Difficulty B`
+
+## Why?
+
+I decided to put this together after noticing two things:
+
+- Many Atari RL papers are selective in what algorithms they compare to.
+- When they compare to human performance, most RL papers compare to amateur human performance.
+Considering RL algorithms see 100s of millions of frames, this isn't an apples to apples comparison.
+
+This is here as a personal reference, as well as to clear the waters a bit about where the state of RL
+is actually at (at least on this domain).
+
 
 ## Win Counts
 
@@ -89,6 +97,10 @@ more unfriendly):
 
 
 ## Methodology
+
+Since the ALE uses the stella Atari emulator, the *Top Human Score* is the top human score on an
+emulator. Atari (and other game) releases tend to vary across region, so this is the only way to
+ensure that both human and machine have, for example, equal access to game breaking bugs.
 
 Reference papers vary in:
 
