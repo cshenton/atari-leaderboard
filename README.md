@@ -9,55 +9,60 @@ in the [Arcade Learning Environment (ALE)](https://github.com/mgbellemare/Arcade
 | Amidar | [71529](https://www.twingalaxies.com/game/amidar/atari-2600-vcs) | 5131 | Human | Rainbow | Q-gradient |
 | Assault | [8647](https://www.twingalaxies.com/game/assault/atari-2600-vcs) | 14497 | Machine | A3C | Policy-gradient |
 | Asterix | [1000000](https://www.twingalaxies.com/game/asterix/atari-2600-vcs) | 428200 | Human | Rainbow | Q-gradient |
-| Asteroids | [57340](https://www.twingalaxies.com/game/asteroids/atari-2600-vcs)* | 5093 | Human | A3C | Policy-gradient |
+| Asteroids | [57340](https://www.twingalaxies.com/game/asteroids/atari-2600-vcs) `*` | 5093 | Human | A3C | Policy-gradient |
 | Atlantis | [10604840](https://www.twingalaxies.com/game/atlantis/atari-2600-vcs) | 2311815 | Human | PPO | Policy-gradient |
 | Bank Heist | [45899](https://www.twingalaxies.com/game/bank-heist/atari-2600-vcs) | 1611 | Human | Dueling DDQN | Q-gradient |
 | Battlezone | [98000](https://www.twingalaxies.com/game/battle-zone-set-1/mame) | 62010 | Human | Rainbow | Q-gradient |
-| Beamrider | [52866](https://www.twingalaxies.com/game/beamrider/atari-2600-vcs)** | 26172 | Human | Prioritized DDQN | Q-gradient |
+| Beamrider | [52866](https://www.twingalaxies.com/game/beamrider/atari-2600-vcs) `1B` | 26172 | Human | Prioritized DDQN | Q-gradient |
 | Berzerk | [1057940](https://www.twingalaxies.com/game/berzerk/atari-2600-vcs) | 2545 | Human | Rainbow | Q-gradient |
 | Bowling | 300 | 135 | Human | HyperNEAT | Genetic Policy |
 | Boxing | [99](https://www.twingalaxies.com/game/boxing/atari-2600-vcs/) | 99 | Draw | Rainbow, ACER | Q,Policy-gradient |
 | Breakout | [864](https://www.twingalaxies.com/game/breakout/atari-2600-vcs/) | 766 | Human | A3C | Policy-gradient |
 | Centipede | [453916](https://www.twingalaxies.com/game/centipede/atari-2600-vcs/) | 25275 | Human | HyperNEAT | Genetic Policy |
 | Chopper Command | [999999](https://www.twingalaxies.com/game/chopper-command/atari-2600-vcs/) | 16654 | Human | Rainbow | Q-gradient |
-| Crazy Climber | 219900 | 183135 | Human | Prioritized DDQN | Q-gradient |
-| Defender | 5443150 | 233021 | Human | A3C | Policy-gradient |
-| Demon Attack | 1556345 | 115201 | Human | A3C | Policy-gradient |
-| Enduro | 118000 | 2260 | Human | Distribution DQN | Q-gradient |
-| Fishing Derby | 71 | 46 | Human | Dueling DDQN | Q-gradient |
-| Freeway | 38 | 34 | Human | Rainbow | Q-gradient |
-| Frostbite | 1832730 | 9590 | Human | Rainbow | Q-gradient |
-| Gopher | 829440 | 70354 | Human | Rainbow | Q-gradient |
-| Gravitar | 999950 | 1419 | Human | Rainbow | Q-gradient |
+| Crazy Climber | [219900](https://www.twingalaxies.com/game/crazy-climber/atari-2600-vcs/) | 183135 | Human | Prioritized DDQN | Q-gradient |
+| Defender | [5443150](https://www.twingalaxies.com/game/defender/atari-2600-vcs/) `N` | 233021 | Human | A3C | Policy-gradient |
+| Demon Attack | [100100](https://www.twingalaxies.com/game/demon-attack/atari-2600-vcs/) `+` | 115201 | Machine | A3C | Policy-gradient |
+| Enduro | [1666](https://www.twingalaxies.com/game/enduro/atari-2600-vcs/) | 2260 | Machine | Distribution DQN | Q-gradient |
+| Fishing Derby | [51](https://www.twingalaxies.com/game/fishing-derby/atari-2600-vcs/) | 46 | Human | Dueling DDQN | Q-gradient |
+| Freeway | [38](https://www.twingalaxies.com/game/freeway/atari-2600-vcs/) `1B` | 34 | Human | Rainbow | Q-gradient |
+| Frostbite | [248460](https://www.twingalaxies.com/game/frostbite/atari-2600-vcs/) | 9590 | Human | Rainbow | Q-gradient |
+| Gopher | [30240](https://www.twingalaxies.com/game/gopher/atari-2600-vcs/) | 70354 | Machine | Rainbow | Q-gradient |
+| Gravitar | [39100](https://www.twingalaxies.com/game/gravitar/atari-2600-vcs/) | 1419 | Human | Rainbow | Q-gradient |
 | HERO | 1000000 | 55887 | Human | Rainbow | Q-gradient |
-| Ice Hockey | 36 | 10 | Human | HyperNEAT | Genetic Policy |
-| Kangaroo | 1424600 | 14854 | Human | Dueling DDQN | Q-gradient |
-| Krull | 1245900 | 12601 | Human | HyperNEAT | Genetic Policy |
-| Kung Fu Master | 1000000 | 52181 | Human | Rainbow | Q-gradient |
-| Montezuma Revenge | 1219200 | 384 | Human | Rainbow | Q-gradient |
+| Ice Hockey | [25](https://www.twingalaxies.com/game/ice-hockey/atari-2600-vcs/) | 10 | Human | HyperNEAT | Genetic Policy |
+| Kangaroo | [1424600](https://www.twingalaxies.com/game/kangaroo/atari-2600-vcs/) `N` | 14854 | Human | Dueling DDQN | Q-gradient |
+| Krull | [104100](https://www.twingalaxies.com/game/krull/atari-2600-vcs/) `N` | 12601 | Human | HyperNEAT | Genetic Policy |
+| Kung Fu Master | [79360](https://www.twingalaxies.com/game/kung-fu-master/atari-2600-vcs/) | 52181 | Human | Rainbow | Q-gradient |
+| Montezumas Revenge | [400000](https://www.twingalaxies.com/game/montezumas-revenge/atari-2600-vcs/) | 384 | Human | Rainbow | Q-gradient |
 | Ms Pacman | 2654680 | 6283 | Human | Dueling DDQN | Q-gradient |
-| Name This Game | 25220 | 13439 | Human | Prioritized DDQN | Q-gradient |
-| Phoenix | 4014440 | 108528 | Human | Rainbow | Q-gradient |
-| Pitfall | 114000 | 0 | Human | Several | Q-gradient |
+| Name This Game | [21210](https://www.twingalaxies.com/game/name-this-game-octopus/atari-2600-vcs) | 13439 | Human | Prioritized DDQN | Q-gradient |
+| Phoenix | [251180](https://www.twingalaxies.com/game/phoenix/atari-2600-vcs) | 108528 | Human | Rainbow | Q-gradient |
+| Pitfall | [114000](https://www.twingalaxies.com/game/pitfall/atari-2600-vcs) | 0 | Human | Several | Q-gradient |
 | Pong | 21 | 21 | Draw | Several | Several |
-| Private Eye | 118000 | 15172 | Human | Distribution DQN | Q-gradient |
-| Qbert | 2400000 | 33817 | Human | Rainbow | Q-gradient |
-| Road Runner | 2038100 | 73949 | Human | A3C | Policy-gradient |
-| Robotank | 76 | 65 | Human | Dueling DDQN | Q-gradient |
-| Seaquest | 999999 | 50254 | Human | Dueling DDQN | Q-gradient |
-| Skiing | -3272 | -6522 | Human | Vanilla GA | Genetic Policy |
-| Space Invaders | 621535 | 23864 | Human | A3C | Policy-gradient |
-| Star Gunner | 69400 | 164766 | Machine | A3C | Policy-gradient |
-| Time Pilot | 112100 | 27202 | Human | A3C | Policy-gradient |
-| Tutankham | 5384 | 280 | Human | ACER | Policy-gradient |
-| Venture | 913200 | 1107 | Human | Distribution DQN | Q-gradient |
-| Video Pinball | 35197952 | 533936 | Human | Rainbow | Q-gradient |
-| Wizard of Wor | 864500 | 18082 | Human | A3C | Policy-gradient |
-| Yars Revenge | 15000105 | 102557 | Human | Rainbow | Q-gradient |
-| Zaxxon | 772400 | 24622 | Human | A3C | Q-gradient |
+| Private Eye | [101800](https://www.twingalaxies.com/game/private-eye/atari-2600-vcs) `**` | 15172 | Human | Distribution DQN | Q-gradient |
+| Qbert | [2400000](https://www.twingalaxies.com/game/qbert/atari-2600-vcs) `N` | 33817 | Human | Rainbow | Q-gradient |
+| Road Runner | [210200](https://www.twingalaxies.com/game/road-runner/atari-2600-vcs) | 73949 | Human | A3C | Policy-gradient |
+| Robot Tank | [68](https://www.twingalaxies.com/game/robot-tank/atari-2600-vcs) | 65 | Human | Dueling DDQN | Q-gradient |
+| Seaquest | [294940](https://www.twingalaxies.com/game/seaquest/atari-2600-vcs) | 50254 | Human | Dueling DDQN | Q-gradient |
+| Skiing | [-3272](https://www.twingalaxies.com/game/skiing/atari-2600-vcs) | -6522 | Human | Vanilla GA | Genetic Policy |
+| Space Invaders | [43710](https://www.twingalaxies.com/game/space-invaders/atari-2600-vcs) `1B` | 23864 | Human | A3C | Policy-gradient |
+| Star Gunner | [77400](https://www.twingalaxies.com/game/stargunner/atari-2600-vcs) `N` | 164766 | Machine | A3C | Policy-gradient |
+| Time Pilot | [34400](https://www.twingalaxies.com/game/time-pilot/atari-2600-vcs) | 27202 | Human | A3C | Policy-gradient |
+| Tutankham | [2026](https://www.twingalaxies.com/game/tutankham/atari-2600-vcs) | 280 | Human | ACER | Policy-gradient |
+| Venture | [38900](https://www.twingalaxies.com/game/venture/atari-2600-vcs) `N` | 1107 | Human | Distribution DQN | Q-gradient |
+| Video Pinball | [3523988](https://www.twingalaxies.com/game/video-pinball/atari-2600-vcs) `1B` | 533936 | Human | Rainbow | Q-gradient |
+| Wizard of Wor | [129500](https://www.twingalaxies.com/game/wizard-of-wor/atari-2600-vcs) | 18082 | Human | A3C | Policy-gradient |
+| Yars Revenge | [2011099](https://www.twingalaxies.com/game/yars-revenge/atari-2600-vcs) `++` | 102557 | Human | Rainbow | Q-gradient |
+| Zaxxon | [83700](https://www.twingalaxies.com/game/zaxxon/atari-2600-vcs) | 24622 | Human | A3C | Q-gradient |
 
-`* Game 6, Difficulty B`
-`* Game 1, Difficulty B`
+`N` NTSC, no emulator results available
+`1B` Game 1, Difficulty B
+`*` Game 6, Difficulty B
+`+` Game 7, Difficulty B
+`**` Game 1, Points
+`++` Game 2, Difficulty A
+
 
 ## Why?
 
